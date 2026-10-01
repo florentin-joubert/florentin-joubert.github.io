@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prénom Nom — e-Portfolio</title>
+<meta name="description" content="e-Portfolio : projets, mobilité, engagement civique, sports.">
+
+<!-- Polices : titres en Space Grotesk, texte en IBM Plex Sans, petites étiquettes en IBM Plex Mono -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ BOUTON MENU MOBILE ============ -->
+<button id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<!-- ============ BARRE LATÉRALE (nav) ============ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <a href="#home" class="brand">Prénom<br>Nom</a>
+    <p class="role" data-i18n="role">Étudiant·e ingénieur·e</p>
+  </div>
+
+  <nav class="main-nav" aria-label="Navigation principale">
+    <a href="#home" class="nav-link active" data-i18n="nav_home">Accueil</a>
+    <a href="#projects" class="nav-link" data-i18n="nav_projects">Projets</a>
+    <a href="#mobility" class="nav-link" data-i18n="nav_mobility">Mobilité</a>
+    <a href="#civic" class="nav-link" data-i18n="nav_civic">Engagement</a>
+    <a href="#sports" class="nav-link" data-i18n="nav_sports">Sports</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <a class="cv-link" id="cv-link" href="assets/cv/cv-fr.pdf" download data-i18n="cv_label">CV (FR)</a>
+
+    <div class="toggles">
+      <button id="theme-toggle" class="toggle-btn" aria-label="Changer de thème">🌓</button>
+      <button id="lang-toggle" class="toggle-btn lang-btn" aria-label="Changer de langue">EN</button>
+    </div>
+
+    <a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+  </div>
+</aside>
+
+<!-- ============ CONTENU ============ -->
+<main>
+
+  <!-- ---------- HOME ---------- -->
+  <section id="home" class="section hero">
+    <p class="eyebrow-mono" data-i18n="hero_kicker">ENSEEIHT · 3EA</p>
+    <h1 class="hero-title">
+      <span data-i18n="hero_line1">Ingénieur·e en formation,</span><br>
+      <span class="accent" data-i18n="hero_line2">curieux·se par nature.</span>
+    </h1>
+    <p class="hero-text" data-i18n="hero_text">
+      Je rassemble ici mes projets techniques, mes expériences à l'international,
+      mon engagement associatif et ma pratique sportive. Bonne visite.
+    </p>
+    <a href="#projects" class="cta-link" data-i18n="hero_cta">Voir mes projets ↓</a>
+  </section>
+
+  <!-- ---------- PROJECTS ---------- -->
+  <section id="projects" class="section">
+    <h2 class="section-title" data-i18n="projects_title">Projets</h2>
+
+    <article class="project-row">
+      <div class="project-meta">
+        <span class="project-date">2026</span>
+        <span class="project-tags"><span class="tag">Python</span><span class="tag">Machine Learning</span></span>
+      </div>
+      <div class="project-body">
+        <h3>Nom du projet 1</h3>
+        <p>Description courte : le contexte, le problème résolu et votre rôle dans l'équipe.</p>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </div>
+    </article>
+
+    <article class="project-row">
+      <div class="project-meta">
+        <span class="project-date">2025</span>
+        <span class="project-tags"><span class="tag">C++</span><span class="tag">Systèmes embarqués</span></span>
+      </div>
+      <div class="project-body">
+        <h3>Nom du projet 2</h3>
+        <p>Description courte : le contexte, le problème résolu et votre rôle dans l'équipe.</p>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </div>
+    </article>
+
+    <article class="project-row">
+      <div class="project-meta">
+        <span class="project-date">2025</span>
+        <span class="project-tags"><span class="tag">Web</span><span class="tag">JavaScript</span></span>
+      </div>
+      <div class="project-body">
+        <h3>Nom du projet 3</h3>
+        <p>Description courte : le contexte, le problème résolu et votre rôle dans l'équipe.</p>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ---------- MOBILITY ---------- -->
+  <section id="mobility" class="section">
+    <h2 class="section-title" data-i18n="mobility_title">Mobilité internationale</h2>
+    <p class="section-text">
+      Décrivez ici votre séjour à l'étranger (échange universitaire, stage, double diplôme) :
+      établissement, dates, ce que vous y avez appris.
+    </p>
+  </section>
+
+  <!-- ---------- CIVIC ---------- -->
+  <section id="civic" class="section">
+    <h2 class="section-title" data-i18n="civic_title">Engagement civique</h2>
+    <p class="section-text">
+      Décrivez vos engagements associatifs, bénévoles ou de représentation étudiante.
+    </p>
+  </section>
+
+  <!-- ---------- SPORTS ---------- -->
+  <section id="sports" class="section">
+    <h2 class="section-title" data-i18n="sports_title">Sports</h2>
+    <p class="section-text">
+      Décrivez votre pratique sportive : compétition, niveau, club, ce que cela vous a appris.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Prénom Nom</p>
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
